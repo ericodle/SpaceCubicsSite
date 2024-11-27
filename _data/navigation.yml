@@ -4,11 +4,11 @@
 main:
   - title: "ホーム"
     url: /ja/home/
-  - title: "アバウト"
+  - title: "会社情報"
     url: /ja/about/
   - title: "製品"
     url: /ja/products/
   - title: "キャリア"
     url: /ja/careers/
-  - title: "最近"
-    url: /ja/recent/
+  - title: "お知らせ"
+    url: /ja/press/

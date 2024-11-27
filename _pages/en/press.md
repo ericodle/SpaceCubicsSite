@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Recent"
-permalink: /recent/
+title: "Press"
+permalink: /press/
 ---
 
 Welcome to the home page!

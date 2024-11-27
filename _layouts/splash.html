@@ -4,9 +4,16 @@ layout: default
 
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
-    <section class="page__hero" style="background-image: url('/assets/imgs/splash.webp'); background-size: cover; background-position: center; height: 50vh; display: flex; align-items: center; justify-content: center;">
+    <!-- Photo Section -->
+    <section class="page__hero" style="background-image: url('/assets/imgs/splash.jpeg'); background-size: cover; background-position: center; height: 50vh; display: flex; align-items: center; justify-content: center;">
       <div class="wrapper" style="text-align: center; color: white;">
         <h1 class="page__title" itemprop="headline">{{ page.title }}</h1>
+      </div>
+    </section>
+    
+    <!-- Content Section -->
+    <section class="page__content" style="padding: 2em; text-align: center;">
+      <div class="wrapper">
         <p>{{ content }}</p>
       </div>
     </section>
