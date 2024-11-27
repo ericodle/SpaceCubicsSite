@@ -10,11 +10,12 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  padding: 0.5em 0; /* Increase padding to give more space */
 
   &__inner-wrap {
     @include clearfix;
     margin-inline: auto;
-    padding: 1em;
+    padding: 0.5em 0;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -38,8 +39,9 @@
   }
 }
 
-.site-logo img {
-  max-height: 2rem;
+.site-logo {
+  display: flex;
+  align-items: center;
 }
 
 .site-title {
