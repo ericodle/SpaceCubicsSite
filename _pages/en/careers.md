@@ -2,6 +2,7 @@
 layout: single
 title: "Careers"
 permalink: /en/careers/
+lang: "en"
 ---
 
 We are always looking for members to work with us. If you are interested, please contact us using this application form.

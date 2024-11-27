@@ -2,6 +2,7 @@
 layout: single
 title: ""
 permalink: /en/about/
+lang: "en"
 ---
 
 

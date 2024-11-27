@@ -2,6 +2,7 @@
 layout: single
 title: "Products"
 permalink: /en/products/
+lang: "en"
 ---
 
 CONCEPT

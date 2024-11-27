@@ -2,6 +2,7 @@
 layout: splash
 title: "Making space exploration possible"
 permalink: /en/home/
+lang: "en"
 ---
 
 

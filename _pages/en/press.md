@@ -2,6 +2,7 @@
 layout: single
 title: "Recent Press Releases"
 permalink: /en/press/
+lang: "en"
 ---
 
 ## March 7, 2022
