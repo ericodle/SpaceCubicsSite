@@ -21,6 +21,16 @@
               >{{ link.title }}</a>
             </li>
           {%- endfor -%}
+          <!-- Language Switcher -->
+          <li class="masthead__menu-item">
+            <div class="language-switcher">
+              <button class="language-button">{{ site.data.ui-text[site.locale].language | default: "言語" }}</button>
+              <ul class="language-options">
+                <li><a href="/en/home/">English</a></li>
+                <li><a href="/ja/home/">日本語</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu | default: "Menu" }}</span>
