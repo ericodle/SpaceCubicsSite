@@ -6,14 +6,26 @@ lang: "ja"
 ---
 
 # Our Vision
+<div style="float: left; margin-left: 20px;">
+  <img src="/assets/imgs/space_bedroom.webp" alt="Space Bedroom" width="500">
+</div>
+<!-- Your content for Our Vision -->
 
 ## 2018年にJAXAエンジニアと組み込みCPUボードの設計者がタッグを組み、JAXA発ベンチャーとして発足しました。 誰でも月に行ける時代… そんな世の中を目指して我々は安価で高性能な宇宙用コンピュータを開発します。
 
 # Our Technology
+<div style="float: right; margin-right: 20px;">
+  <img src="/assets/imgs/bluechip.webp" alt="Bluechip" width="500">
+</div>
+<!-- Your content for Our Technology -->
 
 ## たとえ高価な耐放射線部品を使用しても、宇宙製品の故障を全て防ぐこともできず、貴重な宇宙でのミッションが一瞬で終了することもあります。 Space Cubicsの製品は、国際宇宙ステーションで蓄積された技術を活用することで、信頼性と製品開発コスト削減の両立を実現します。
 
 # 最近のお知らせ
+<div style="float: left; margin-left: 20px;">
+  <img src="/assets/imgs/latestnews.webp" alt="Latest News" width="500">
+</div>
+<!-- Your content for 最近のお知らせ -->
 
 ### 2022年 3月 7日　 ニュースイッチ掲載
 ### 2020年 8月18日　 SERVIS事業に採択
