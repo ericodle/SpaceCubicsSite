@@ -31,10 +31,13 @@ The greatest advantage of Space Cubics' products is that users can focus exclusi
 By offering affordable space computers and comprehensive space development support, Space Cubics simplifies entry into space development and contributes to the growth of the private space industry in Japan and across Asia.
 
 
-*chip image text requires translation*
+<div style="float: left; margin-left: 20px;">
+  <img src="/assets/imgs/products_pcb1.webp" alt="Space Bedroom" width="500">
+</div>
 
 
-PRODUCTS
+
+# PRODUCTS
 
 Command and Data Handling (C&DH)
 Onboard Computer (OBC)
@@ -43,7 +46,7 @@ This space computer is optimally designed for CubeSats, leveraging reliability d
 
 
 
-SPECIFICATION
+# SPECIFICATION
 
 SC-OBC Module A1
 Main FPGA device
@@ -115,11 +118,10 @@ Please contact us for more details.
 We develop boards that link the SC-OBC Module A1 to satellites.
 
 
-Notes on pricing
+# Notes on pricing
 
 The SC-OBC Module A1 is planned for space demonstration aboard a satellite developed in-house. 
 The listed price is a special, limited-time offer available only until the space demonstration.
-
 
 The special price is subject to the following conditions:
 
@@ -134,8 +136,8 @@ If you have any questions about the scope of the data request or the process for
 We may request your participation in a survey to gather feedback on the usability and specifications of this product.
 
 
-Data sheet
-User manual
+# Data sheet
+# User manual
 
 Describes specifications, communication system, circuit configuration, etc. for SC-OBC Module A1.
 Link
@@ -154,11 +156,16 @@ The product is currently under development, and specifications are subject to ch
 
 We aim to incorporate as many user requests as possible. If you have any suggestions or requests, please don't hesitate to contact us.
 
-Example Use Case
+# Example Use Case
 
-*image
+<div style="float: left; margin-left: 20px;">
+  <img src="/assets/imgs/products_pcb2.webp" alt="Space Bedroom" width="500">
+</div>
 
-To be installed on our satellite, the SC-OBC Module A1 is mounted on an interface board designed to match the PC104 form factor.
+# To be installed on our satellite, the SC-OBC Module A1 is mounted on an interface board designed to match the PC104 form factor.
 
-*image
-The satellite with the SC-OBC Module A1 installed on the interface board (currently in development).
+<div style="float: left; margin-left: 20px;">
+  <img src="/assets/imgs/products_tower.webp" alt="Space Bedroom" width="500">
+</div>
+
+# The satellite with the SC-OBC Module A1 installed on the interface board (currently in development).
