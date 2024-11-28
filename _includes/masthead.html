@@ -2,7 +2,7 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+      <nav id="site-nav" class="greedy-nav" data-lang="">
         {% unless logo_path == empty %}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
@@ -11,31 +11,49 @@
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a> -->
-        <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a
-                href="{{ link.url | relative_url }}"
-                {% if link.description %} title="{{ link.description }}"{% endif %}
-                {% if link.target %} target="{{ link.target }}"{% endif %}
-              >{{ link.title }}</a>
-            </li>
-          {%- endfor -%}
-          <!-- Language Switcher -->
-          <li class="masthead__menu-item">
-            <div class="language-switcher">
-              <button class="language-button">{{ site.data.ui-text[site.locale].language | default: "言語" }}</button>
-              <ul class="language-options">
-                <li><a href="/en/home/">English</a></li>
-                <li><a href="/ja/home/">日本語</a></li>
-              </ul>
-            </div>
-          </li>
+        <ul class="visible-links" id="nav-links">
+          <!-- Links will be populated by JavaScript -->
         </ul>
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu | default: "Menu" }}</span>
-          <i class="fas fa-bars" aria-hidden="true"></i>
-        </button>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            var nav = document.getElementById("site-nav");
+            var navLinks = document.getElementById("nav-links");
+            var path = window.location.pathname;
+            var lang = (path === '/' || path.includes('/ja/')) ? 'ja' : 'en';
+            nav.setAttribute('data-lang', lang);
+      
+            var links = {
+              'ja': [
+                { title: "ホーム", url: "/ja/home/" },
+                { title: "会社情報", url: "/ja/about/" },
+                { title: "製品", url: "/ja/products/" },
+                { title: "キャリア", url: "/ja/careers/" },
+                { title: "お知らせ", url: "/ja/press/" },
+                { title: "English", url: "/en/home/" }
+              ],
+              'en': [
+                { title: "Home", url: "/en/home/" },
+                { title: "About", url: "/en/about/" },
+                { title: "Products", url: "/en/products/" },
+                { title: "Careers", url: "/en/careers/" },
+                { title: "Press", url: "/en/press/" },
+                { title: "日本語", url: "/ja/home/" }
+              ]
+            };
+      
+            links[lang].forEach(function(link) {
+              var li = document.createElement("li");
+              li.className = "masthead__menu-item";
+              var a = document.createElement("a");
+              a.href = link.url;
+              a.textContent = link.title;
+              li.appendChild(a);
+              navLinks.appendChild(li);
+            });
+      
+            console.log("Current page URL: " + window.location.pathname);
+          });
+        </script>
       </nav>
     </div>
   </div>

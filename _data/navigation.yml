@@ -1,7 +1,7 @@
 # _data/navigation.yml
 
-# main links
-main:
+# Japanese links
+ja:
   - title: "ホーム"
     url: /ja/home/
   - title: "会社情報"
@@ -12,3 +12,20 @@ main:
     url: /ja/careers/
   - title: "お知らせ"
     url: /ja/press/
+  - title: "English"
+    url: /en/home/ 
+
+# English links
+en:
+  - title: "Home"
+    url: /en/home/
+  - title: "About"
+    url: /en/about/
+  - title: "Products"
+    url: /en/products/
+  - title: "Careers"
+    url: /en/careers/
+  - title: "Press"
+    url: /en/press/
+  - title: "日本語"
+    url: /ja/home/ 
