@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: products
 title: "Products"
 permalink: /en/products/
 lang: "en"
