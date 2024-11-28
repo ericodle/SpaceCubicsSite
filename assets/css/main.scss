@@ -13,3 +13,8 @@ search: false
   height: auto; /* Maintain aspect ratio */
 }
 
+.content-container {
+  margin: 0 auto;
+  max-width: 80%; /* Adjust the max-width as needed */
+  padding: 0 20px; /* Optional: Add padding for better spacing */
+}
