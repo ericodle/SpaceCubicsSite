@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: about
 title: ""
 permalink: /en/about/
 lang: "en"
@@ -9,7 +9,7 @@ lang: "en"
 # VISION
 
 <div style="float: right; margin-left: 20px;">
-  <img src="/assets/imgs/moonface.jpeg" alt="Space Bedroom" width="500">
+  <img src="/assets/imgs/moonface.jpeg" alt="Space Bedroom" width="1200">
 </div>
 
 ## More affordable

@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: press
 title: "Recent Press Releases"
 permalink: /en/press/
 lang: "en"

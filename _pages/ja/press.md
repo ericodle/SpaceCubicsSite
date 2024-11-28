@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: press
 title: "お知らせ"
 permalink: /ja/press/
 lang: "ja"

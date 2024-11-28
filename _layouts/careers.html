@@ -12,12 +12,16 @@ layout: default
 {% endif %}
 
 <!-- Photo Section -->
-<section class="page__hero" style="background-image: url('/assets/imgs/careers_banner.jpeg'); background-size: cover; background-position: center; height: 20vh; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0; overflow: hidden;">
-  <div class="wrapper" style="text-align: center; color: white; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-    <img src="/assets/imgs/careers_banner.jpeg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: center 50%;">
-    <h1 class="page__title" itemprop="headline" style="position: absolute;">{{ page.title }}</h1>
+<section class="page__hero" style="position: relative; background-image: url('/assets/imgs/careers_banner.jpeg'); background-size: cover; background-position: center; height: 20vh; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0; overflow: hidden;">
+  <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7);"></div>
+  <div class="wrapper" style="text-align: center; color: white; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative;">
+    <h1 class="page__title" itemprop="headline">{{ page.title }}</h1>
   </div>
 </section>
+
+<div class="content-container">
+  {{ content }}
+</div>
 
 <div class="content-container">
   {{ content }}
