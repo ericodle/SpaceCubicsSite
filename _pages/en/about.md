@@ -8,6 +8,10 @@ lang: "en"
 
 # VISION
 
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/moonface.jpeg" alt="Space Bedroom" width="500">
+</div>
+
 ## More affordable
 
 ### Space equipment demands stricter requirements than terrestrial equipment, including rigorous safety and reliability verification in addition to performance standards, resulting in significantly higher development costs. Space Cubics, a "JAXA venture," bridges expertise between consumer computer designers with proven success in space applications and JAXA engineers, who bring extensive design verification experience gained from space development projects. By combining these strengths, we deliver high-quality space computers at affordable prices, significantly reducing the overall cost of space equipment development.
@@ -27,15 +31,27 @@ lang: "en"
 
 # SERVICE
 
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/about_pcb.webp" alt="Space Bedroom" width="500">
+</div>
+
 ## Space computer solutions
 
 ### We develop and sell space computers tailored to diverse needs, featuring innovative radiation countermeasure technology built on spacecraft design expertise honed at JAXA.
 
 ## Design and development contracting
 
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/about_ide.webp" alt="Space Bedroom" width="500">
+</div>
+
 ### We provide contract services for software, FPGA, and electrical design, offering support for a wide range of programming languages and customized design solutions tailored to user needs.
 
 ## Consulting
+
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/about_hands.webp" alt="Space Bedroom" width="500">
+</div>
 
 ### Leveraging JAXA's extensive development expertise, we offer comprehensive support for space equipment development, covering everything from design and development to launch procedures.
 
@@ -83,6 +99,11 @@ lang: "en"
 
 # CLIENTS
 
+
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/about_thanks.webp" alt="Space Bedroom" width="500">
+</div>
+
 ## Japan Aerospace Exploration Agency (JAXA)
 
 ### Customer Feedback: To develop equipment for future installation on the ISS, we requested the creation of RTOS-based control software for an ultra-compact control board, as well as the implementation of a communication interface with the ground via the ISS.
@@ -94,7 +115,11 @@ lang: "en"
 ## ElevationSpace Inc. 
 
 
-# PARTNER
+# PARTNERS
+
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/about_spaceone.webp" alt="Space Bedroom" width="500">
+</div>
 
 ## SPACE ONE CO., LTD. 
 
@@ -104,6 +129,7 @@ lang: "en"
 
 ## COMPANY INFORMATION
 
+
 Space Cubics, LLC.
 Venture Square 301
 Minami 3-jo Higashi 2-chome
@@ -112,3 +138,21 @@ Hokkaido, Japan
 〒060-0053
 
 +81 050-7112-6213
+
+<div id="map" style="height: 400px; width: 100%;"></div>
+
+<script>
+  function initMap() {
+    var location = {lat: 43.06417, lng: 141.34694}; // Replace with your business location
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: location
+    });
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+

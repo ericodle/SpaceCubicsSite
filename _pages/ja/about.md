@@ -7,6 +7,10 @@ lang: "ja"
 
 # VISION
 
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/moonface.jpeg" alt="Space Bedroom" width="500">
+</div>
+
 ## もっと安く
 
 ### 宇宙用の機器は地上用に比べて、性能に加えて安全性や信頼性検証などの要求事項が多く、適合させるための開発コストが非常に高くなります。Space Cubicsは、これまで多くの宇宙での使用実績のある民生コンピューターの設計者と、宇宙開発の経験から培った多くの設計検証ノウハウを持つJAXAエンジニアがタッグを組み、「JAXAベンチャー」として信頼性の高い宇宙用コンピューターを安価に提供します。そして、宇宙機器の開発コストを大きく削減します。
@@ -27,15 +31,27 @@ lang: "ja"
 
 ## 宇宙用コンピュータ販売
 
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/about_pcb.webp" alt="Space Bedroom" width="500">
+</div>
+
 ### 多様なニーズに対応可能な宇宙用コンピュータを自社開発・販売
 ### JAXAで培った宇宙機設計ノウハウをベースに、独自の放射線対策技術を導入
 
 ## 設計開発受託
 
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/about_ide.webp" alt="Space Bedroom" width="500">
+</div>
+
 ### ソフトウェア・FPGA・電気設計等を受託 
 ### ユーザーのニーズに合わせて、多くのプログラム言語や各種設計要求に対応 
 
 ## コンサルティング
+
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/about_hands.webp" alt="Space Bedroom" width="500">
+</div>
 
 ### 宇宙機器開発サポート
 ### JAXAにおける多くの開発実績を生かし、設計開発から打ち上げに対する手続きに至るまでをお手伝い
@@ -84,6 +100,10 @@ lang: "ja"
 
 # CLIENTS
 
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/about_thanks.webp" alt="Space Bedroom" width="500">
+</div>
+
 ## 国立研究開発法人 宇宙航空研究開発機構 (JAXA)
 
 ### お客様の声：将来的なISS搭載を目指した機器開発のために、超小型制御ボードにおける RTOSベースの制御ソフトウェア構築、ISSを介した地上との通信インタフェース の実装作業をお願いしました。
@@ -94,7 +114,11 @@ lang: "ja"
 
 ## 株式会社ElevationSpace
 
-# PARTNER
+# PARTNERS
+
+<div style="float: right; margin-left: 20px;">
+  <img src="/assets/imgs/about_spaceone.webp" alt="Space Bedroom" width="500">
+</div>
 
 ## スペースワン株式会社
 
@@ -104,7 +128,29 @@ lang: "ja"
 
 ## COMPANY INFORMATION
 
-合同会社Space Cubics
-〒060-0053 北海道札幌市中央区南3条東2丁目1番地 ベンチャースクエア301
 
-050-7112-6213
+Space Cubics, LLC.
+Venture Square 301
+Minami 3-jo Higashi 2-chome
+Chuo-ku, Sapporo
+Hokkaido, Japan 
+〒060-0053
+
++81 050-7112-6213
+
+<div id="map" style="height: 400px; width: 100%;"></div>
+
+<script>
+  function initMap() {
+    var location = {lat: 43.06417, lng: 141.34694}; // Replace with your business location
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: location
+    });
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
