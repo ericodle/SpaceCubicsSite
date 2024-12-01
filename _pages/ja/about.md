@@ -155,7 +155,6 @@ lang: "ja"
       <p>〒060-0053</p>
       <p>+81 050-7112-6213</p>
   </div>
-</div>
 
 <style>
   .content-container {
