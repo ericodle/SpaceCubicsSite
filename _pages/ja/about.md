@@ -171,7 +171,6 @@ lang: "ja"
         </div>
   </div>
 
-
 <style>
   .heading {
     font-size: 3em; /* Adjust the size as needed */
