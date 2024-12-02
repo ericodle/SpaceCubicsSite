@@ -14,7 +14,7 @@ lang: "en"
     <div class="column left">
     <h2 class="heading">VISION</h2>
       <div class="divider"></div>
-      <!-- Left column content -->
+      <!-- Left column contents -->
       <h3>More affordable</h3>
       <p>Space equipment demands stricter requirements than terrestrial equipment, including rigorous safety and reliability verification in addition to performance standards, resulting in significantly higher development costs. Space Cubics, a "JAXA venture," bridges expertise between consumer computer designers with proven success in space applications and JAXA engineers, who bring extensive design verification experience gained from space development projects. By combining these strengths, we deliver high-quality space computers at affordable prices, significantly reducing the overall cost of space equipment development.</p>
       <h3>More accessible</h3>
