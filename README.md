@@ -10,16 +10,6 @@ This repository contains the source code for the Space Cubics website, built usi
    bundle exec jekyll serve
    ```
 
-## Project Structure
-- _config.yml: Configuration file for Jekyll.
-- _includes/: Contains reusable HTML components.
-- _layouts/: Contains layout templates for the site.
-- _pages/: Contains individual pages for the site.
-- _sass/: Contains Sass stylesheets.
-- assets/: Contains images, JavaScript, and CSS files.
-- Gemfile: Specifies gem dependencies for the project.
-- Rakefile: Contains tasks for building and maintaining the project.
-
 # Main Goal
 
 Jekyll を使用して Space Cubics Web サイトをより保守しやすい形式に移植する
