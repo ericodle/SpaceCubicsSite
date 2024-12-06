@@ -5,7 +5,8 @@ permalink: /en/careers/
 lang: "en"
 ---
 
-# We are always looking for members to work with us. If you are interested, please contact us using this application form.
+# We are always looking for members. 
+## If you are interested, please contact us using this application form.
 
 Space Cubics is a company founded by engineers who connected through their work in space and computer technology. We are passionate about engineering and design, creating computers that are built to withstand the harsh and extreme conditions of space.
 
