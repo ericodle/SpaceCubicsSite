@@ -13,6 +13,8 @@ lang: "en"
   </div>
 </section>
 
+<br><br>
+
 # Cost Savings and Reliability
 
 ### In space equipment development, budgets are often limited, leading to the use of inexpensive general-purpose computers. However, concerns about their reliability in the harsh conditions of outer space, where radiation levels are extremely high, remain.
