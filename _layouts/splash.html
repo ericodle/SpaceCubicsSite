@@ -2,15 +2,6 @@
 layout: default
 ---
 
-{% if page.breadcrumbs != null %}
-  {% assign breadcrumbs_enabled = page.breadcrumbs %}
-{% endif %}
-{% if page.url != "/" and breadcrumbs_enabled %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
 <!-- Photograph Section -->
 <section class="page__hero" style="background-image: url('/assets/imgs/splash.jpeg'); background-size: cover; background-position: center; height: 50vh; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0; overflow: hidden;">
   <div class="wrapper" style="text-align: center; color: white; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
@@ -18,6 +9,16 @@ layout: default
   </div>
 </section>
 
-<div class="content-container">
-  {{ content }}
-</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+  <div class="content-container">
+    {{ content }}
+  </div>
+</body>
+</html>
