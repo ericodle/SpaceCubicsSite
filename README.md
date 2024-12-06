@@ -2,17 +2,12 @@
 
 This repository contains the source code for the Space Cubics website, built using Jekyll and the Minimal Mistakes theme.
 
-## Installation
+## Test locally
 
-1. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
-
-   ```bash
-   bundle
-   ```
-2. Build the site and make it available on a local server. :
+1.  Build the site and make it available on a local server. :
 
    ```bash
-   jekyll serve
+   bundle exec jekyll serve
    ```
 
 ## Project Structure
@@ -25,7 +20,30 @@ This repository contains the source code for the Space Cubics website, built usi
 - Gemfile: Specifies gem dependencies for the project.
 - Rakefile: Contains tasks for building and maintaining the project.
 
-## Key Features
-- Responsive Design: The site is designed to be responsive and works well on various devices.
-- Multilingual Support: The site supports multiple languages, including English and Japanese.
-- Customizable: Built with the Minimal Mistakes theme, the site is highly customizable.
+# Main Goal
+
+Jekyll を使用して Space Cubics Web サイトをより保守しやすい形式に移植する
+
+# Benefits
+
+- HTML や JavaScript を知らなくても保守が容易
+- さまざまなホスティング サービスへの移行が容易になる
+- 速度: Jekyll は静的 HTML ファイルを生成します。バックエンド処理やデータベース クエリがないため、動的に生成されたページよりも速く読み込まれます。
+- セキュリティ: データベースやバックエンド スクリプトがなければ、静的サイトは SQL インジェクションやサーバー側エクスプロイトなどの攻撃に対して脆弱になりません。
+- マークダウンのサポート: コンテンツをマークダウンで記述すると、生の HTML を扱わずに投稿やページの書式設定が簡単になります
+
+# Structure
+
+```python
+.
+├── assets
+├── _includes
+├── _layouts
+├── _pages
+│   ├── en
+│   └── ja
+└── _site
+```
+
+- _pages に移動するだけで、メイン サイトのページを編集できます (en=英語版、jp=日本語版)。
+- _layouts には、ページの書式設定に使用される HTML と CSS が含まれています。
