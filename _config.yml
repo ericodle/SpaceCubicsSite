@@ -316,9 +316,27 @@ defaults:
       path: "_pages/en"
     values:
       lang: "en"
-      permalink: /:path/
+      permalink: /en/pages/:path/
   - scope:
       path: "_pages/ja"
     values:
       lang: "ja"
-      permalink: /ja/:path/
+      permalink: /ja/pages/:path/
+  - scope:
+      path: "_news/en"
+    values:
+      lang: "en"
+      layout: news
+      permalink: /en/news/:title/
+  - scope:
+      path: "_news/ja"
+    values:
+      lang: "ja"
+      layout: news
+      permalink: /ja/news/:title/
+
+# Add the _news collection
+collections:
+  news:
+    output: true
+    permalink: /news/:path/
