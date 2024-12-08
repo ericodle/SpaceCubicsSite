@@ -4,7 +4,7 @@ This repository contains the source code for the Space Cubics website, built usi
 
 ## Test locally
 
-1.  Build the site and make it available on a local server.
+1.  Build the site and make it available on a local server (recommended: use Ruby Version 3).
 
    ```bash
    bundle exec jekyll serve
