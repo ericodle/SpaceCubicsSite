@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "宇宙開発をもっと手軽に"
+title: "Making space development more accessible"
 permalink: /en/home/
 lang: "en"
 
