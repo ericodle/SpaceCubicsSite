@@ -211,12 +211,7 @@ body {
     .page__title,
     .page__meta,
     .page__lead,
-    .btn {
-      color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
-      width: 100%; // Makes the button take the full width of its container
-      padding: 1em 2em; // Adjust padding as needed
-    }
+    .btn,
 
     .page__lead {
       max-width: $medium;

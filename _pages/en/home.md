@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Making space development more accessible"
+title: "Putting space within reach"
 permalink: /en/home/
 lang: "en"
 
