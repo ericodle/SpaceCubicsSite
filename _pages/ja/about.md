@@ -4,19 +4,8 @@ layout: about
 permalink: /ja/about
 lang: "ja"
 
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: assets/imgs/moonface.jpeg
-  actions:
-    - label: "Download"
-      url: "https://github.com/mmistakes/minimal-mistakes/"
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-
-excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
-
 our_vision:
-  - image_path: assets/imgs/space_bedroom.webp
+  - image_path: /assets/imgs/moonface.jpeg
     alt: ""
     title: "Our Vision"
     excerpt: "2018年にJAXAエンジニアと組み込みCPUボードの設計者がタッグを組み、JAXA発ベンチャーとして発足しました。誰でも月に行ける時代… そんな世の中を目指して我々は安価で高性能な宇宙用コンピュータを開発します。"
