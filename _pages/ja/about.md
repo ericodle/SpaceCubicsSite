@@ -9,24 +9,21 @@ our_vision:
     alt: ""
     title: "Our Vision"
     excerpt: "2018年にJAXAエンジニアと組み込みCPUボードの設計者がタッグを組み、JAXA発ベンチャーとして発足しました。誰でも月に行ける時代… そんな世の中を目指して我々は安価で高性能な宇宙用コンピュータを開発します。"
-    url: "/ja/about/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
 
 feature_row:
   - image_path: /assets/imgs/about_pcb.webp
     alt: ""
     title: "宇宙用コンピュータ販売"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: "-- 多様なニーズに対応可能な宇宙用コンピュータを自社開発・販売 -- JAXAで培った宇宙機設計ノウハウをベースに、独自の放射線対策技術を導入"
   - image_path: /assets/imgs/about_ide.webp
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: ""
     title: "設計開発受託"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: "-- ソフトウェア・FPGA・電気設計等を受託 -- ユーザーのニーズに合わせて、多くのプログラム言語や各種設計要求に対応 "
   - image_path: /assets/imgs/about_hands.webp
     alt: ""
     title: "コンサルティング"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: "-- 宇宙機器開発サポート -- JAXAにおける多くの開発実績を生かし、設計開発から打ち上げに対する手続きに至るまでをお手伝い"
     
 feature_row2:
     - image_path: 
