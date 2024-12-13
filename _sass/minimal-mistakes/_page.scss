@@ -199,7 +199,9 @@ body {
     }
 
     .wrapper {
-      padding-inline: 50em;
+      color: #fff;
+      width: 100%; // Makes the button take the full width of its container
+      padding: 10em; // Adjust padding as needed
 
       @include breakpoint($x-large) {
         max-width: $x-large;
@@ -212,6 +214,8 @@ body {
     .btn {
       color: #fff;
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      width: 100%; // Makes the button take the full width of its container
+      padding: 1em 2em; // Adjust padding as needed
     }
 
     .page__lead {
