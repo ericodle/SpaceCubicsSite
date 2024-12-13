@@ -23,31 +23,41 @@ feature_row:
     alt: ""
     title: "設計開発受託"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
   - image_path: /assets/imgs/about_hands.webp
     alt: ""
     title: "コンサルティング"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
     
 feature_row2:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-    
+    - image_path: 
+      alt: ""
+      title: "荘司 靖 (Yasushi Shoji)"
+      excerpt: "CEO -- Software Engineer -- 2000年にSalem State Univ., MA, USA 卒業。2002年より組み込みCPUボード開発に従事。幅広い知識と経験を生かし、2016年に宇宙用ドローン(Int-Ball)の統括ソフトウェア開発を担当。"
+    - image_path: 
+      alt: ""
+      title: "佐々木 大輔 (Daisuke Sasaki)"
+      excerpt: "CTO -- LSI Logic Engineer -- 2001年より11年間 国内半導体企業にてLSIの開発における幅広い設計工程を経験。2013年から自ら設計したLSIを搭載した組み込みCPUボードの開発を経験しソフトウェアまで知識領域を持つ。"
+    - image_path: 
+      alt: ""
+      title: "森島 史仁 (Fumito Morishima)"
+      excerpt: "CFO -- Sales, Finance Control -- 2000年より16年間、組み込みCPUボードメーカーにて開発・営業・マーケティング・経営に携わり、幅広いビジネススキルを習得。また東南アジアで事業を興しており、アジアにコネクションを持つ。"
+  
+
 feature_row3:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Right Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+  - image_path: 
+    alt: ""
+    title: "佐々木 拓也 (Takuya Sasaki)"
+    excerpt: "CAO -- Software Engineer, Sales -- 1998年より国内電機メーカーのソフトウェアエンジニアとして主に官公庁向けのネットワーク管理システムの開発に従事。2013年から組み込みCPUボードメーカーのFAEとして、数多くの顧客の開発、量産をサポートしてきた。"
+  - image_path: 
+    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    alt: ""
+    title: "波塚 朋広 (Tomohiro Namitsuka)"
+    excerpt: "CPO -- Electronics Engineer -- 2002年より組み込みCPUボードメーカーのハードウェアエンジニアとして、多くの基板開発を担当。耐環境性・信頼性が要求される産業用途向け製品の回路設計から量産製造までの幅広い知識と経験を活かし、安価で安心して使える宇宙機の提供を目指す。"
+  - image_path: 
+    alt: ""
+    title: "後藤 雅享 (Masayuki Goto)"
+    excerpt: "Space System Engineer -- 2002年よりJAXAにて有人宇宙開発に従事。国際宇宙ステーションに搭載する数々の機器開発プロジェクトを担当し、広い分野での開発・打上げ・運用経験を持つ。JAXAと民間の両面から宇宙開発の発展を目指す。"
+
 feature_row4:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
@@ -56,15 +66,16 @@ feature_row4:
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--primary"
+
 ---
 
 {% include feature_row id="our_vision" type="right" %}
 
-{% include feature_row %}
+{% include feature_row id="feature_row" %}
 
-{% include feature_row id="feature_row2" type="left" %}
+{% include feature_row id="feature_row2" %}
 
-{% include feature_row id="feature_row3" type="right" %}
+{% include feature_row id="feature_row3" %}
 
 {% include feature_row id="feature_row4" type="center" %}
 
