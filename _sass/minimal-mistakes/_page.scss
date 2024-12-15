@@ -558,3 +558,18 @@ body {
     }
   }
 }
+
+/*
+   Eric's CSS
+   ========================================================================== */
+   .banner__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+  }

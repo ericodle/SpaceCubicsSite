@@ -5,11 +5,9 @@ permalink: /ja/products
 lang: "ja"
 
 banners:
-    - overlay_color: "#000000"
-      overlay_image: /assets/imgs/products_banner.jpeg
+    - image: /assets/imgs/products_banner.jpeg
       caption: "Photo credit: [n/a]"
-    - overlay_color: "#000000"
-      overlay_image: /assets/imgs/products_banner2.jpeg
+    - image: /assets/imgs/products_banner2.jpeg
       caption: "Photo credit: [n/a]"
 
 cost_savings:
