@@ -4,6 +4,14 @@ title: "製品"
 permalink: /ja/products
 lang: "ja"
 
+banners:
+    - overlay_color: "#000000"
+      overlay_image: /assets/imgs/products_banner.jpeg
+      caption: "Photo credit: [n/a]"
+    - overlay_color: "#000000"
+      overlay_image: /assets/imgs/products_banner2.jpeg
+      caption: "Photo credit: [n/a]"
+
 cost_savings:
   - image_path: assets/imgs/products_inference.png
     image_style: "width: 50%; height: auto;"
@@ -134,13 +142,7 @@ example_2:
 
 ---
 
-<section class="page__hero" style="position: relative; background-image: url('/assets/imgs/products_banner.jpeg'); background-size: cover; background-position: center; height: 20vh; display: flex; align-items: center; justify-content: center; width: 100%; margin: 2em; overflow: hidden;">
-  <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7);"></div>
-  <div class="wrapper" style="text-align: center; color: white; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative;">
-    <h1>CONCEPT</h1>
-  </div>
-</section>
-
+{% include banner.html index=0 %}
 
 {% include feature_row id="cost_savings" type="left" %}
 
@@ -148,14 +150,7 @@ example_2:
 
 {% include feature_row id="ease_of_use" type="left" %}
 
-<section class="page__hero" style="position: relative; background-image: url('/assets/imgs/products_banner2.jpeg'); background-size: cover; background-position: center; height: 20vh; display: flex; align-items: center; justify-content: center; width: 100%; margin: 0em; overflow: hidden;">
-  <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7);"></div>
-  <div class="wrapper" style="text-align: center; color: white; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative;">
-    <h1>PRODUCTS</h1>
-  </div>
-</section>
-
-<br><br>
+{% include banner.html index=1 %}
 
 {% include feature_row id="onboard_computer" type="left" %}
 
@@ -194,7 +189,6 @@ example_2:
   | **This is a limited time price** | [Click here for conditions of price application](#) |
   | **Interface board contract development** | Please contact us for more details.          |
   | **We also develop boards that link the SC-OBC Module A1 to satellites.** | |
-
 
 {% include feature_row id="price_notes" type="right" %}
 
