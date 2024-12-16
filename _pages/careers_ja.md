@@ -1,8 +1,7 @@
 ---
 layout: careers
 title: "キャリア"
-permalink: /ja/careers/
-lang: "ja"
+permalink: /careers/
 ---
 
 # 一緒に働くメンバーを常に募集しています。

@@ -1,59 +1,38 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav" data-lang="">
+      <nav id="site-nav" class="greedy-nav">
         {% unless logo_path == empty %}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
-        <!-- Commenting out the site title -->
-        <!-- <a class="site-title" href="{{ '/' | relative_url }}">
+        <a class="site-title" href="{{ '/' | relative_url }}">
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
-        </a> -->
-        <ul class="visible-links" id="nav-links">
-          <!-- Links will be populated by JavaScript -->
+        </a>
+        <ul class="visible-links">
+          {%- for link in site.data.navigation.main -%}
+            <li class="masthead__menu-item">
+              <a
+                href="{{ link.url | relative_url }}"
+                {% if link.description %} title="{{ link.description }}"{% endif %}
+                {% if link.target %} target="{{ link.target }}"{% endif %}
+              >{{ link.title }}</a>
+            </li>
+          {%- endfor -%}
         </ul>
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            var nav = document.getElementById("site-nav");
-            var navLinks = document.getElementById("nav-links");
-            var path = window.location.pathname;
-            var lang = (path === '/' || path.includes('/ja/')) ? 'ja' : 'en';
-            nav.setAttribute('data-lang', lang);
-      
-            var links = {
-              'ja': [
-                { title: "ホーム", url: "/ja/home/" },
-                { title: "会社情報", url: "/ja/about/" },
-                { title: "製品", url: "/ja/products/" },
-                { title: "キャリア", url: "/ja/careers/" },
-                { title: "ニュース", url: "/ja/news/" }, 
-                { title: "English", url: "/en/home/" }
-              ],
-              'en': [
-                { title: "Home", url: "/en/home/" },
-                { title: "About", url: "/en/about/" },
-                { title: "Products", url: "/en/products/" },
-                { title: "Careers", url: "/en/careers/" },
-                { title: "News", url: "/en/news/" },  
-                { title: "日本語", url: "/ja/home/" }
-              ]
-            };
-      
-            links[lang].forEach(function(link) {
-              var li = document.createElement("li");
-              li.className = "masthead__menu-item";
-              var a = document.createElement("a");
-              a.href = link.url;
-              a.textContent = link.title;
-              li.appendChild(a);
-              navLinks.appendChild(li);
-            });
-      
-            console.log("Current page URL: " + window.location.pathname);
-          });
-        </script>
+        {% if site.search == true %}
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+          <i class="fas fa-search"></i>
+        </button>
+        {% endif %}
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>

@@ -1,8 +1,8 @@
 ---
 layout: products
 title: "製品"
-permalink: /ja/products
-lang: "ja"
+permalink: /products/
+
 
 banners:
   - image: /assets/imgs/products_banner.jpeg

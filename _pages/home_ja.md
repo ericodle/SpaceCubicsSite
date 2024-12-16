@@ -1,8 +1,7 @@
 ---
 layout: splash
 title: "宇宙開発をもっと手軽に"
-permalink: /ja/home/
-lang: "ja"
+permalink: /home/
 
 header:
   overlay_image: assets/imgs/splash.jpeg

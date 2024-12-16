@@ -1,8 +1,7 @@
 ---
 title: "About Page"
 layout: about
-permalink: /ja/about
-lang: "ja"
+permalink: /about/
 
 our_vision:
   - image_path: /assets/imgs/moonface.jpeg
