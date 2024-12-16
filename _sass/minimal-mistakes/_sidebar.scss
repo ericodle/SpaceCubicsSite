@@ -105,7 +105,7 @@
   }
 }
 
-.splash .sidebar__right {
+.sidebar__right {
   @include breakpoint($large) {
     position: relative;
     float: inline-end;
