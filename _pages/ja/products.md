@@ -5,10 +5,14 @@ permalink: /ja/products
 lang: "ja"
 
 banners:
-    - image: /assets/imgs/products_banner.jpeg
-      caption: "Photo credit: [n/a]"
-    - image: /assets/imgs/products_banner2.jpeg
-      caption: "Photo credit: [n/a]"
+  - image: /assets/imgs/products_banner.jpeg
+    caption: "OUR CONCEPT"
+    image_class: "custom-class"
+    image_style: "width: 100%; height: auto;"
+  - image: /assets/imgs/products_banner2.jpeg
+    caption: "OUR PRODUCTS"
+    image_class: "another-class"
+    image_style: "width: 100%; height: auto;"
 
 cost_savings:
   - image_path: assets/imgs/products_inference.png
